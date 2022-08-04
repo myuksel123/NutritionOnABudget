@@ -1,0 +1,1 @@
+document.getElementById("notes_form").onsubmit=function(e){e.preventDefault();var t={content:e.target.elements[0].value,date:new Date};notes.push(t),e.target.elements[0].value="",redrawNotes(),sendToServer(t)},new ol.Map({target:"map",layers:[new ol.layer.Tile({source:new ol.source.OSM})],view:new ol.View({center:ol.proj.fromLonLat([37.41,8.82]),zoom:4})});
